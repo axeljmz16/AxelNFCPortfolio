@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página no encontrada | Axel Gabriel Pérez Jiménez</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script>
+      function resolveHomePath() {
+        const segments = window.location.pathname.split("/").filter(Boolean);
+
+        if (window.location.hostname.endsWith("github.io") && segments.length > 0) {
+          return "/" + segments[0] + "/";
+        }
+
+        return "/";
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const homePath = resolveHomePath();
+        const homeLink = document.querySelector("[data-home-link]");
+
+        if (homeLink) {
+          homeLink.setAttribute("href", homePath);
+        }
+
+        window.setTimeout(() => {
+          window.location.href = homePath;
+        }, 2400);
+      });
+    </script>
+  </head>
+  <body class="not-found-body">
+    <main class="site-shell not-found-shell">
+      <section class="section section-top">
+        <article class="panel panel-cta reveal is-visible">
+          <p class="micro-label">404</p>
+          <h1 class="not-found-title">Esta ruta no existe en el portafolio.</h1>
+          <p class="not-found-copy">
+            Te regreso al inicio automáticamente en unos segundos. Si prefieres, puedes abrir la página principal ahora.
+          </p>
+          <div class="hero__actions">
+            <a class="button button-light" data-home-link href="./">
+              <span>Ir al inicio</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

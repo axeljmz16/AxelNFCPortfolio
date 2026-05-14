@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Portafolio NFC en Edge",
+      "type": "pwa-msedge",
+      "request": "launch",
+      "url": "http://127.0.0.1:5500",
+      "webRoot": "${workspaceFolder}/public",
+      "preLaunchTask": "Iniciar servidor portafolio"
+    },
+    {
+      "name": "Portafolio NFC en Chrome",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://127.0.0.1:5500",
+      "webRoot": "${workspaceFolder}/public",
+      "preLaunchTask": "Iniciar servidor portafolio"
+    }
+  ]
+}

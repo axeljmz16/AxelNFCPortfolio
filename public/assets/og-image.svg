@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06111d" />
+      <stop offset="100%" stop-color="#0d1730" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#74f3ff" />
+      <stop offset="50%" stop-color="#76a9ff" />
+      <stop offset="100%" stop-color="#ef8cf7" />
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <g opacity="0.4" filter="url(#blur)">
+    <circle cx="220" cy="120" r="140" fill="#2dd4ff" />
+    <circle cx="1040" cy="130" r="150" fill="#ef8cf7" />
+    <circle cx="360" cy="560" r="160" fill="#4f7bff" />
+  </g>
+
+  <g opacity="0.12">
+    <path d="M0 80H1200M0 160H1200M0 240H1200M0 320H1200M0 400H1200M0 480H1200M0 560H1200" stroke="#fff" />
+    <path d="M80 0V630M160 0V630M240 0V630M320 0V630M400 0V630M480 0V630M560 0V630M640 0V630M720 0V630M800 0V630M880 0V630M960 0V630M1040 0V630M1120 0V630" stroke="#fff" />
+  </g>
+
+  <rect x="84" y="86" width="1032" height="458" rx="34" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.11)" />
+  <text x="126" y="175" fill="#9fb3d3" font-family="Manrope, sans-serif" font-size="30" letter-spacing="6">ADVANCED ENGINEERING PROFILE</text>
+  <text x="126" y="292" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="78" font-weight="700">Axel Gabriel</text>
+  <text x="126" y="374" fill="url(#accent)" font-family="Space Grotesk, sans-serif" font-size="86" font-weight="700">P&#233;rez Jim&#233;nez</text>
+  <text x="126" y="444" fill="#d7e2f3" font-family="Manrope, sans-serif" font-size="34">Systems architecture, automation, hardware + technical product execution.</text>
+
+  <rect x="126" y="479" width="320" height="52" rx="26" fill="rgba(116,243,255,0.14)" stroke="rgba(116,243,255,0.25)" />
+  <text x="165" y="513" fill="#d7fbff" font-family="Manrope, sans-serif" font-size="23" font-weight="700">Builder mindset &#183; Real systems</text>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "html.format.indentInnerHtml": true,
+  "liveServer.settings.root": "/public",
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.NoBrowser": false
+}
